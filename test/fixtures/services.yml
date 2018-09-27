@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  url: 'https://developers.facebook.com/status/'
+  text_on_page: MyString
+  number_of_occurrences: 1
+  load_waiting_sec: 1
+
+two:
+  name: MyString
+  url: 'https://developers.facebook.com/status/'
+  text_on_page: MyString
+  number_of_occurrences: 1
+  load_waiting_sec: 1

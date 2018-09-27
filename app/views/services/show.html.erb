@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @service.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @service.url %>
+</p>
+
+<p>
+  <strong>Text on page:</strong>
+  <%= @service.text_on_page %>
+</p>
+
+<p>
+  <strong>Number of occurrences:</strong>
+  <%= @service.number_of_occurrences %>
+</p>
+
+<p>
+  <strong>Load waiting sec:</strong>
+  <%= @service.load_waiting_sec %>
+</p>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>

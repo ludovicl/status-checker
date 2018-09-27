@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pinged_at:
+  is_up: false
+  service: one
+
+two:
+  pinged_at: 
+  is_up: true
+  service: two
