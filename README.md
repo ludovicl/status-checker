@@ -1,24 +1,13 @@
-# README
+# Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+~~~sh
+bundle
+rake db:setup
+rails s
+~~~
+Note :  
+We use [watir](http://watir.com) to scrap webpages, check [chromedriver](http://chromedriver.chromium.org) in case of trouble.
 
-Things you may want to cover:
+# Clockwork
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Usage : `clockwork config/clock.rb`
