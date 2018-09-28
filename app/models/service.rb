@@ -9,6 +9,7 @@ class Service < ApplicationRecord
 
   def update_status
     is_up = StatusChecker.excute(url, text_on_page, number_of_occurrences, load_waiting_sec)
+    notify_by_email if is_up
     add_ping(is_up)
   end
 
@@ -20,5 +21,9 @@ class Service < ApplicationRecord
 
   def add_ping(is_up)
     Ping.create!(service: self, is_up: is_up)
+  end
+
+  def notify_by_email
+    ServiceMailer.service_down(self).deliver_later
   end
 end
