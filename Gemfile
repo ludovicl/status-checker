@@ -36,15 +36,15 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-# Nokogiri is an HTML, XML, SAX, and Reader parser.
-gem 'nokogiri', '~> 1.6', '>= 1.6.6.2'
-
 # Automated testing tool for web applications.
 gem 'watir', '~> 6.14'
 gem 'chromedriver-helper'
 
 # Headless is a Ruby interface for Xvfb. It allows you to create a headless display straight from Ruby code
 gem 'headless', '~> 2.2', '>= 2.2.3'
+
+# A scheduler process to replace cron
+gem 'clockwork', '~> 2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
